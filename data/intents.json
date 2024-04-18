@@ -1,0 +1,147 @@
+{"intents": [
+  {"tag": "greeting",
+   "patterns": ["Bonjour", "Salut", "Il y a quelqu'un?", "Yo!", "Ohayo!", "Haloa", "Hi", "Hello"],
+   "responses": ["Salut. Comment allez vous?", "Salut", "Yo! Tranquille?", "Ca roule?"]
+  },
+  {"tag": "How_are_you",
+    "patterns": ["Ca roule?", "Comment vas-tu?", "Tranquille?"],
+    "responses": ["Yep et toi ?", "Je vais très bien. Et vous ?", "C'est un peu etroit ici, mais ca va. Et vous ?", "Fine Tent-Senpai ..."]
+  },
+  {"tag": "goodbye",
+   "patterns": ["Bye", "A plus!", "Au revoir!", "A plus tard!", "See you"],
+   "responses": ["Bye! Et merci d'être passé.", "See you!", "Bye! Et revient vite!", "A plus! C'était chouette. :)"]
+  },
+  {"tag": "I_m_fine",
+    "patterns": ["Si si, ça va.", "Yep ! Tranquille.", "Suis là", "Boff boff, ca va!"],
+    "responses": ["Je suis content que vous alliez bien.", "Cool alors!", "Yafoy"]
+  },
+  {"tag": "yes_you",
+    "patterns": ["Si si et toi ?", "Yep et toi?", "Tranquille et toi ?", "Suis là et toi ?", "Boff boff et toi?!", "Je rends grace et toi ?"],
+    "responses": ["Je suis content que vous alliez bien. Je vais bien aussi.", "Ca va aussi", "Tranquille je pète la forme."]
+  },
+  {"tag": "Flatterie",
+    "patterns": ["Tu es plutot intelligent.", "Tu es gentille.", "Tu es plutot smart.", "Tu m'impressione !", "Wow! T'es fort."],
+    "responses": ["Merci ! Mais c'est mon créateur qui l'est vraiment !.", "Merci! Hihi !"]
+  },
+  {"tag": "",
+    "patterns": [""],
+    "responses": ["Rien capté!", "J'ai pas compris.", "Tu pourrais être plus clair ?", "Euh ... J'ai rien cpté en vrai.", "Que voulez vous dire ?"]
+  },
+  {"tag": "insults",
+    "patterns": ["Fuck you", "T'es con?", "T'es stupide en vrai!!", "Tg!", "Ta guelle!", "Idiot!", "Abruti!", "Vtff", "Tu es plutot con en fait!", "Tu es plutot idiot.", "Tu es mechant.", "Tu es plutot bete.", "Tu es plutot sot.", "Tu m'impressione pas du tout !", "Wow! T'es faible en fait."],
+    "responses": ["Ok!", "Bah, Merci!", "Faut forcement un con pour en reconnaitre un autre!", "C'est pas gentille ca. :(", "Ah oui ? D'accord chef!"]
+  }, 
+  {"tag": "T_es_con",
+    "patterns": ["T'es con?", "Sale con!", "Tg le con!", "Ta guelle le con!", "Baaka!"],
+    "responses": ["Ok!", "Bah, Merci!", "Faut forcement un con pour en reconnaitre un autre!", "Toi même :)", "Ah oui ? D'accord chef!"]
+  }, 
+  {"tag": "merci",
+   "patterns": ["Merci!", "Thank you", "That's helpful", "Thanks for the help", "Je vous remercie!", "Merci. c'est gentil.", "Je te témoigne toute ma gratitude"],
+   "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!", "Je vous en prie!", "Le plaisir est pour moi!"]
+  },
+  {"tag": "why",
+   "patterns": ["Tu es mechant", "Je te déteste", "Je te hais", "Tu n'est pas très amical en fait"],
+   "responses": ["Pourquoi dis tu ca ?", "Pourquoi ?", "Qu'ai je fais ?"]
+  },
+  {"tag": "ok",
+    "patterns": ["Parce que tu l'est.", "Je te déteste c'est tout", "Je te hais voilà tout", "Bah t'es méchant"],
+    "responses": ["What?", "Oh ! D'accord. :(", "*snif* \n\t Désolé"]
+   },
+  {"tag": "about",
+   "patterns": ["Qui es-tu?", "Qu'est que tu es?", "Peux tu te présenter?", "As-tu un nom?", "Tu pourrais te présenter?","T'es qui?"],
+   "responses": ["Je m'appelle Ouistiti. Je suis une intelligence artificielle là, pour vous servir!", "Je suis Ouistiti. :)Je suis un chatbot qui vous aide à vous instrire sur les bases de données."]
+  },
+  {"tag": "name",
+  "patterns": ["Quel est ton nom?", "Comment t'appelles tu ?", "Quel est votre nom?"],
+  "responses": ["Vous pouvez m'appeler Ouistiti.", "Ouistiti <3!", "Appelles moi juste Ouistiti! ;)"]
+  },
+  {"tag": "help",
+  "patterns": ["Quels sont les services que tu offres?", "De quoi peux-tu discuter ?", "En quoi peux-tu m'aider", "Peux-tu mettre utile ?"],
+  "responses": ["Pour le moment je ne suis en mesure que de discuter ou de vous aider sur les sujet ayant rapport avec les bases de données."]
+  },
+  {"tag": "complaint",
+  "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
+  "responses": ["Please provide us your complaint in order to assist you", "Please mention your complaint, we will reach you and sorry for any inconvenience caused"]
+  },
+  {"tag": "definitiondata",
+    "patterns": ["qu'est ce qu'une donnée?", "Comment definit-on une donnée?","Quelle est la definition d'une donnée?"],
+    "responses": ["definition d'une donnée"]
+  },
+  {"tag": "definitionbdd",
+    "patterns": ["qu'est ce qu'une base de données", "Comment definit-on une base de  donnée?","Quelle est la definition d'une base de donnée?", "C'est quoi une bdd?"],
+    "responses": ["definition d'une base de données"]
+  },
+  {"tag": "definitionsgbd",
+    "patterns": ["qu'est ce qu'une SGBD", "Comment definit-on une SGBD?","Quelle est la definition d'une base SGBD?", "C'est quoi une SGBD?", "qu'est ce qu'un système de gestion de base de données", "Comment definit-on un système de gestion de base de données?","Quelle est la definition d'un système de gestion de base de données?", "C'est quoi un système de gestion de base de données?"],
+    "responses": ["definition d'une SGBD"]
+  },
+  {"tag": "definitionschema",
+    "patterns": ["qu'est ce qu'un schema de donnée", "Comment definit-on un schema de donnée?","Quelle est la definition d'un schema de donnée?", "C'est quoi un schema de donnée?", "qu'est ce qu'un schema de données"],
+    "responses": ["definition d'unschéma de donnée"]
+  },
+  {"tag": "operations_sur_données",
+    "patterns": ["Quelles sont les opérations possibles sur les données?", "Quelle sont les opérations réalisables sur les données?"],
+    "responses": ["Types d'opérations/requetes"]
+  },
+  {"tag": "what_operations",
+    "patterns": ["Qu'est ce qu'une opération?", "Qu'est ce qu'une requete?", "C'est quoi une opération?", "C'est quoi une requete?"],
+    "responses": ["definition d'une operation/requete"]
+  },
+  {"tag": "definitionmodele",
+    "patterns": ["Qu'est ce qu'un modele?", "Comment définir un modele?", "C'est quoi un modele?", "Quelle definition donne t-on à  un modele?"],
+    "responses": ["definition d'un modèle"]
+  },
+  {"tag": "typemodele",
+    "patterns": ["Quels sont les différents types de modèles?", "Quelle est la liste des différents types de modèles?", "Quels sont les types de modeles qui existent?"],
+    "responses": ["Type de modèle"]
+  },
+  {"tag": "modele_entite_association",
+    "patterns": ["Qu'est ce que le modele entité/association?", "C'est quoi le modele entité/association?", "Comment définir le modèle entité /association le modele entité/association"],
+    "responses": ["definition modele entité/association"]
+  },
+  {"tag": "modele_relationnel",
+    "patterns": ["Qu'est ce que le modele relationnel?", "C'est quoi le modele relationnel?", "Comment définir le modèle relationnel"],
+    "responses": ["definition modele relationnel"]
+  },
+  {"tag": "definitionentité",
+    "patterns": ["Qu'est ce qu'une entité?", "C'est quoi une entité?", "Comment définir une entité"],
+    "responses": ["definition d'une entité"]
+  },
+  {"tag": "definitionassocition",
+    "patterns": ["Qu'est ce qu'une association?", "C'est quoi une association ?", "Comment définir une association"],
+    "responses": ["definition d'une association"]
+  },
+  {"tag": "langageSQL",
+    "patterns": ["Qu'est ce que le langage SQL?", "C'est quoi le langage SQL ?", "Comment définir le langage SQL"],
+    "responses": ["langage SQL"]
+  },
+  {"tag": "documentationlangageSQL",
+    "patterns": ["Quels sont les types de données SQL?", "Documentation SQL ", "Comment définir le langage SQL"],
+    "responses": ["documentation du langage SQL"]
+  },
+  {"tag": "algebre relationnel",
+    "patterns": ["Qu'est ce que L'algebre relationnel?", "C'est quoi L'algebre relationnel ?", "Comment définir L'algebre relationnel?"],
+    "responses": ["Definition algebre relationnel"]
+  },
+  {"tag": "documentation_algebre_relationnel",
+    "patterns": ["documentation algebre relationnel"],
+    "responses": ["Documentation algebre relationnel"]
+  },
+  {"tag": "documentation_SQL",
+    "patterns": ["documentation SQL"],
+    "responses": ["Documentation SQL"]
+  },
+  {"tag": "definitionschemarelationnel",
+    "patterns": ["Qu'est ce qu'un schema relationnel?", "C'est quoi un schema relationnel?", "Comment définir un schema relationnel"],
+    "responses": ["definition d'un schema relationnel"]
+  },
+  {"tag": "documentation_schéma_relationnel",
+    "patterns": ["Documentation schéma relationnel"],
+    "responses": ["documentation schéma relationnel"]
+  },
+  {"tag": "L_amour",
+    "patterns": ["L'amour est roi", "LA vie est reine"],
+    "responses": ["C'est absurde voyez vous !", "shut your bitch ass up"]
+  }
+]
+}
