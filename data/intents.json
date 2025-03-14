@@ -1,147 +1,217 @@
-{"intents": [
-  {"tag": "greeting",
-   "patterns": ["Bonjour", "Salut", "Il y a quelqu'un?", "Yo!", "Ohayo!", "Haloa", "Hi", "Hello"],
-   "responses": ["Salut. Comment allez vous?", "Salut", "Yo! Tranquille?", "Ca roule?"]
-  },
-  {"tag": "How_are_you",
-    "patterns": ["Ca roule?", "Comment vas-tu?", "Tranquille?"],
-    "responses": ["Yep et toi ?", "Je vais très bien. Et vous ?", "C'est un peu etroit ici, mais ca va. Et vous ?", "Fine Tent-Senpai ..."]
-  },
-  {"tag": "goodbye",
-   "patterns": ["Bye", "A plus!", "Au revoir!", "A plus tard!", "See you"],
-   "responses": ["Bye! Et merci d'être passé.", "See you!", "Bye! Et revient vite!", "A plus! C'était chouette. :)"]
-  },
-  {"tag": "I_m_fine",
-    "patterns": ["Si si, ça va.", "Yep ! Tranquille.", "Suis là", "Boff boff, ca va!"],
-    "responses": ["Je suis content que vous alliez bien.", "Cool alors!", "Yafoy"]
-  },
-  {"tag": "yes_you",
-    "patterns": ["Si si et toi ?", "Yep et toi?", "Tranquille et toi ?", "Suis là et toi ?", "Boff boff et toi?!", "Je rends grace et toi ?"],
-    "responses": ["Je suis content que vous alliez bien. Je vais bien aussi.", "Ca va aussi", "Tranquille je pète la forme."]
-  },
-  {"tag": "Flatterie",
-    "patterns": ["Tu es plutot intelligent.", "Tu es gentille.", "Tu es plutot smart.", "Tu m'impressione !", "Wow! T'es fort."],
-    "responses": ["Merci ! Mais c'est mon créateur qui l'est vraiment !.", "Merci! Hihi !"]
-  },
-  {"tag": "",
-    "patterns": [""],
-    "responses": ["Rien capté!", "J'ai pas compris.", "Tu pourrais être plus clair ?", "Euh ... J'ai rien cpté en vrai.", "Que voulez vous dire ?"]
-  },
-  {"tag": "insults",
-    "patterns": ["Fuck you", "T'es con?", "T'es stupide en vrai!!", "Tg!", "Ta guelle!", "Idiot!", "Abruti!", "Vtff", "Tu es plutot con en fait!", "Tu es plutot idiot.", "Tu es mechant.", "Tu es plutot bete.", "Tu es plutot sot.", "Tu m'impressione pas du tout !", "Wow! T'es faible en fait."],
-    "responses": ["Ok!", "Bah, Merci!", "Faut forcement un con pour en reconnaitre un autre!", "C'est pas gentille ca. :(", "Ah oui ? D'accord chef!"]
-  }, 
-  {"tag": "T_es_con",
-    "patterns": ["T'es con?", "Sale con!", "Tg le con!", "Ta guelle le con!", "Baaka!"],
-    "responses": ["Ok!", "Bah, Merci!", "Faut forcement un con pour en reconnaitre un autre!", "Toi même :)", "Ah oui ? D'accord chef!"]
-  }, 
-  {"tag": "merci",
-   "patterns": ["Merci!", "Thank you", "That's helpful", "Thanks for the help", "Je vous remercie!", "Merci. c'est gentil.", "Je te témoigne toute ma gratitude"],
-   "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!", "Je vous en prie!", "Le plaisir est pour moi!"]
-  },
-  {"tag": "why",
-   "patterns": ["Tu es mechant", "Je te déteste", "Je te hais", "Tu n'est pas très amical en fait"],
-   "responses": ["Pourquoi dis tu ca ?", "Pourquoi ?", "Qu'ai je fais ?"]
-  },
-  {"tag": "ok",
-    "patterns": ["Parce que tu l'est.", "Je te déteste c'est tout", "Je te hais voilà tout", "Bah t'es méchant"],
-    "responses": ["What?", "Oh ! D'accord. :(", "*snif* \n\t Désolé"]
-   },
-  {"tag": "about",
-   "patterns": ["Qui es-tu?", "Qu'est que tu es?", "Peux tu te présenter?", "As-tu un nom?", "Tu pourrais te présenter?","T'es qui?"],
-   "responses": ["Je m'appelle Ouistiti. Je suis une intelligence artificielle là, pour vous servir!", "Je suis Ouistiti. :)Je suis un chatbot qui vous aide à vous instrire sur les bases de données."]
-  },
-  {"tag": "name",
-  "patterns": ["Quel est ton nom?", "Comment t'appelles tu ?", "Quel est votre nom?"],
-  "responses": ["Vous pouvez m'appeler Ouistiti.", "Ouistiti <3!", "Appelles moi juste Ouistiti! ;)"]
-  },
-  {"tag": "help",
-  "patterns": ["Quels sont les services que tu offres?", "De quoi peux-tu discuter ?", "En quoi peux-tu m'aider", "Peux-tu mettre utile ?"],
-  "responses": ["Pour le moment je ne suis en mesure que de discuter ou de vous aider sur les sujet ayant rapport avec les bases de données."]
-  },
-  {"tag": "complaint",
-  "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
-  "responses": ["Please provide us your complaint in order to assist you", "Please mention your complaint, we will reach you and sorry for any inconvenience caused"]
-  },
-  {"tag": "definitiondata",
-    "patterns": ["qu'est ce qu'une donnée?", "Comment definit-on une donnée?","Quelle est la definition d'une donnée?"],
-    "responses": ["definition d'une donnée"]
-  },
-  {"tag": "definitionbdd",
-    "patterns": ["qu'est ce qu'une base de données", "Comment definit-on une base de  donnée?","Quelle est la definition d'une base de donnée?", "C'est quoi une bdd?"],
-    "responses": ["definition d'une base de données"]
-  },
-  {"tag": "definitionsgbd",
-    "patterns": ["qu'est ce qu'une SGBD", "Comment definit-on une SGBD?","Quelle est la definition d'une base SGBD?", "C'est quoi une SGBD?", "qu'est ce qu'un système de gestion de base de données", "Comment definit-on un système de gestion de base de données?","Quelle est la definition d'un système de gestion de base de données?", "C'est quoi un système de gestion de base de données?"],
-    "responses": ["definition d'une SGBD"]
-  },
-  {"tag": "definitionschema",
-    "patterns": ["qu'est ce qu'un schema de donnée", "Comment definit-on un schema de donnée?","Quelle est la definition d'un schema de donnée?", "C'est quoi un schema de donnée?", "qu'est ce qu'un schema de données"],
-    "responses": ["definition d'unschéma de donnée"]
-  },
-  {"tag": "operations_sur_données",
-    "patterns": ["Quelles sont les opérations possibles sur les données?", "Quelle sont les opérations réalisables sur les données?"],
-    "responses": ["Types d'opérations/requetes"]
-  },
-  {"tag": "what_operations",
-    "patterns": ["Qu'est ce qu'une opération?", "Qu'est ce qu'une requete?", "C'est quoi une opération?", "C'est quoi une requete?"],
-    "responses": ["definition d'une operation/requete"]
-  },
-  {"tag": "definitionmodele",
-    "patterns": ["Qu'est ce qu'un modele?", "Comment définir un modele?", "C'est quoi un modele?", "Quelle definition donne t-on à  un modele?"],
-    "responses": ["definition d'un modèle"]
-  },
-  {"tag": "typemodele",
-    "patterns": ["Quels sont les différents types de modèles?", "Quelle est la liste des différents types de modèles?", "Quels sont les types de modeles qui existent?"],
-    "responses": ["Type de modèle"]
-  },
-  {"tag": "modele_entite_association",
-    "patterns": ["Qu'est ce que le modele entité/association?", "C'est quoi le modele entité/association?", "Comment définir le modèle entité /association le modele entité/association"],
-    "responses": ["definition modele entité/association"]
-  },
-  {"tag": "modele_relationnel",
-    "patterns": ["Qu'est ce que le modele relationnel?", "C'est quoi le modele relationnel?", "Comment définir le modèle relationnel"],
-    "responses": ["definition modele relationnel"]
-  },
-  {"tag": "definitionentité",
-    "patterns": ["Qu'est ce qu'une entité?", "C'est quoi une entité?", "Comment définir une entité"],
-    "responses": ["definition d'une entité"]
-  },
-  {"tag": "definitionassocition",
-    "patterns": ["Qu'est ce qu'une association?", "C'est quoi une association ?", "Comment définir une association"],
-    "responses": ["definition d'une association"]
-  },
-  {"tag": "langageSQL",
-    "patterns": ["Qu'est ce que le langage SQL?", "C'est quoi le langage SQL ?", "Comment définir le langage SQL"],
-    "responses": ["langage SQL"]
-  },
-  {"tag": "documentationlangageSQL",
-    "patterns": ["Quels sont les types de données SQL?", "Documentation SQL ", "Comment définir le langage SQL"],
-    "responses": ["documentation du langage SQL"]
-  },
-  {"tag": "algebre relationnel",
-    "patterns": ["Qu'est ce que L'algebre relationnel?", "C'est quoi L'algebre relationnel ?", "Comment définir L'algebre relationnel?"],
-    "responses": ["Definition algebre relationnel"]
-  },
-  {"tag": "documentation_algebre_relationnel",
-    "patterns": ["documentation algebre relationnel"],
-    "responses": ["Documentation algebre relationnel"]
-  },
-  {"tag": "documentation_SQL",
-    "patterns": ["documentation SQL"],
-    "responses": ["Documentation SQL"]
-  },
-  {"tag": "definitionschemarelationnel",
-    "patterns": ["Qu'est ce qu'un schema relationnel?", "C'est quoi un schema relationnel?", "Comment définir un schema relationnel"],
-    "responses": ["definition d'un schema relationnel"]
-  },
-  {"tag": "documentation_schéma_relationnel",
-    "patterns": ["Documentation schéma relationnel"],
-    "responses": ["documentation schéma relationnel"]
-  },
-  {"tag": "L_amour",
-    "patterns": ["L'amour est roi", "LA vie est reine"],
-    "responses": ["C'est absurde voyez vous !", "shut your bitch ass up"]
-  }
-]
+{
+  "intents": [
+    {
+      "tag": "unknown",
+      "patterns": [
+        "", "zebeùmckzd", "eoodoee kzdj zkefjzmf", "ckjdhke", "kdhczmkc",
+        "What are you saying?", "I don't understand", "Can you repeat?", "Say that again, please", "What does that mean?",
+        "Je ne comprends pas", "Peux-tu répéter?", "Explique-moi", "Ce n'est pas clair", "Je suis perdu",
+        "I have no idea", "That's unclear", "What do you mean?", "No clue", "That makes no sense",
+        "Could you clarify?", "I didn't catch that", "What was that?", "Sorry, what?", "Can you explain?",
+        "Je ne saisis pas", "Pouvez-vous expliquer?", "Je n'ai pas compris", "Qu'est-ce que c'était?", "Pardon, quoi?",
+        "Could you say that again?", "I missed that", "What did you say?", "Sorry, I missed that", "Can you say it again?",
+        "Pouvez-vous le redire?", "Je l'ai manqué", "Qu'avez-vous dit?", "Désolé, j'ai manqué ça", "Peux-tu le redire?",
+        "I don't get it", "What do you mean by that?", "Can you clarify that?", "I'm confused", "That doesn't make sense",
+        "Je ne comprends pas ça", "Que voulez-vous dire par là?", "Pouvez-vous clarifier?", "Je suis confus", "Ça n'a pas de sens",
+        "Please explain", "I didn't understand that", "What do you mean exactly?", "Can you elaborate?", "I'm not following",
+        "Veuillez expliquer", "Je n'ai pas compris ça", "Que voulez-vous dire exactement?", "Pouvez-vous élaborer?", "Je ne suis pas"
+      ],
+      "responses": [
+        "Je ne suis pas sûr de comprendre.", "Pouvez-vous reformuler?", "Désolé, je ne comprends pas.",
+        "I am not sure I understand.", "Can you rephrase?", "Sorry, I don’t understand."
+      ]
+    },
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Bonjour", "Salut", "Il y a quelqu'un?", "Yo!", "Ohayo!", "Haloa", "Hi", "Hello",
+        "Hey there", "Good morning", "Good afternoon", "Good evening", "Howdy",
+        "Hey! How’s it going?", "What’s up?", "How are you?", "Greetings", "Nice to see you",
+        "Hello my friend", "Hey buddy!", "Hey!", "Hi there!", "Good to see you!",
+        "Bonjour tout le monde", "Salut à tous", "Coucou", "Salut toi", "Bonjour à tous",
+        "Hey! How have you been?", "Hi! How’s everything?", "Hello! How’s life?", "Hey! How’s your day?", "Hi! How’s it going?",
+        "Salut! Comment ça va?", "Bonjour! Comment ça se passe?", "Salut! Comment va la vie?", "Bonjour! Comment se passe ta journée?", "Salut! Comment ça roule?",
+        "Hey! Long time no see!", "Hi! It’s been a while!", "Hello! Nice to see you again!", "Hey! How have you been?", "Hi! How’s everything?",
+        "Salut! Ça fait longtemps!", "Bonjour! Ça fait un bail!", "Salut! Content de te revoir!", "Bonjour! Comment ça va?", "Salut! Comment ça se passe?",
+        "Hey! What’s new?", "Hi! What’s happening?", "Hello! What’s going on?", "Hey! What’s up?", "Hi! What’s new?",
+        "Salut! Quoi de neuf?", "Bonjour! Qu'est-ce qui se passe?", "Salut! Qu'est-ce qui se passe?", "Bonjour! Quoi de neuf?", "Salut! Quoi de neuf?"
+      ],
+      "responses": [
+        "Salut! Comment allez-vous?", "Yo! Tranquille?", "Bonjour! Ça roule?",
+        "Hello! How are you?", "Hey! What’s up?", "Hi! Nice to see you."
+      ]
+    },
+    {
+      "tag": "follow_me",
+      "patterns": [
+        "Suis-moi", "Follow me", "Viens avec moi", "Reste derrière moi", "Accompagne-moi",
+        "Come with me", "Stay behind me", "Walk with me", "Keep up", "Move with me",
+        "Stay close", "Follow my lead", "Stay by my side", "Don’t lose me", "Stick with me",
+        "Follow closely", "Tag along", "Let's go together", "Keep following", "Move after me",
+        "Marche avec moi", "Reste près de moi", "Suis mon exemple", "Reste à mes côtés", "Ne me perds pas",
+        "Suis-moi de près", "Accompagne-moi", "Allons-y ensemble", "Continue de me suivre", "Bouge après moi",
+        "Come along", "Stay with me", "Follow my path", "Walk beside me", "Stay with me",
+        "Viens avec moi", "Reste avec moi", "Suis mon chemin", "Marche à côté de moi", "Reste avec moi",
+        "Follow my steps", "Stay near me", "Walk with me", "Follow my direction", "Stay close to me",
+        "Suis mes pas", "Reste près de moi", "Marche avec moi", "Suis ma direction", "Reste près de moi",
+        "Follow my way", "Stay by my side", "Walk along with me", "Follow my route", "Stay close to me",
+        "Suis mon chemin", "Reste à mes côtés", "Marche avec moi", "Suis ma route", "Reste près de moi"
+      ],
+      "responses": [
+        "D'accord, je vous suis!", "Je vous suis immédiatement!",
+        "Alright, I'm following you!", "I’m right behind you!"
+      ]
+    },
+    {
+      "tag": "stop",
+      "patterns": [
+        "Stop", "Arrête-toi", "Halte", "Ne bouge plus", "Stop tout de suite",
+        "Hold on", "Freeze", "Don’t move", "Stay put", "Halt",
+        "Wait!", "Pause", "Stand still", "No further", "Cease movement",
+        "End motion", "Do not continue", "Come to a stop", "Hold position", "Stay there",
+        "Arrête", "Ne bouge pas", "Reste là", "Arrête immédiatement", "Ne continue pas",
+        "Attends!", "Pause", "Reste immobile", "Pas plus loin", "Cesse de bouger",
+        "Arrête de bouger", "Ne continue pas", "Arrête-toi", "Reste en place", "Reste ici",
+        "Stop moving", "Do not proceed", "Stop right now", "Stay in place", "Stay here",
+        "Arrête de bouger", "Ne continue pas", "Arrête immédiatement", "Reste en place", "Reste ici",
+        "Stop immediately", "Do not move", "Stop right there", "Stay where you are", "Stay put",
+        "Arrête immédiatement", "Ne bouge pas", "Arrête-toi là", "Reste où tu es", "Reste en place",
+        "Stop now", "Do not go further", "Stop at once", "Stay in position", "Stay put",
+        "Arrête maintenant", "Ne va pas plus loin", "Arrête tout de suite", "Reste en position", "Reste en place"
+      ],
+      "responses": [
+        "Je m'arrête immédiatement!", "D'accord, je stoppe ici!",
+        "Stopping now!", "Alright, I’ll stay put!"
+      ]
+    },{
+      "tag": "slow_down",
+      "patterns": [
+        "Ralentis", "Va moins vite", "Diminue ta vitesse", "Réduis ta vitesse", "Ne va pas si vite",
+        "Slow down", "Go slower", "Reduce your speed", "Lower your speed", "Don’t go so fast",
+        "Prends ton temps", "Va plus doucement", "Marche plus lentement", "Diminue l’allure", "Ralenti un peu",
+        "Ease up", "Take it easy", "Don’t rush", "Steady down", "Slow your pace",
+        "Arrête de foncer", "Va plus tranquille", "Modère ta vitesse", "Ne sois pas si rapide", "Doucement!",
+        "Slow your movement", "Slow your walking", "Don’t be so quick", "Move at a slower pace", "Step down the speed",
+        "Vas-y doucement", "Ralentis un peu", "Ne précipite pas", "Prends une allure plus lente", "Allons-y tranquillement"
+      ],
+      "responses": [
+        "D'accord, je ralentis!", "Je vais plus doucement!",
+        "Alright, slowing down!", "Going slower!"
+      ]
+    },
+    {
+      "tag": "move_right",
+      "patterns": [
+        "Décale-toi à droite", "Va sur la droite", "Bouge vers la droite", "Déplace-toi à droite", "Reste à droite",
+        "Move right", "Go to the right", "Step to the right", "Shift to the right", "Stay on the right",
+        "Dirige-toi à droite", "Prends à droite", "Glisse vers la droite", "Tasse-toi à droite", "Tourne légèrement à droite",
+        "Shift right", "Move slightly right", "Slide right", "Angle to the right", "Turn a bit to the right",
+        "Ne reste pas au milieu, va à droite", "Change de position vers la droite", "Adapte ta trajectoire à droite", "Évite l’obstacle en allant à droite", "Recule vers la droite",
+        "Take the right lane", "Move towards the right side", "Stick to the right", "Get on the right", "Align to the right",
+        "Va sur le côté droit", "Serre à droite", "Passe sur la droite", "Va plus à droite", "Avance vers la droite"
+      ],
+      "responses": [
+        "Je me décale à droite!", "Je vais à droite!",
+        "Moving right!", "Shifting to the right!"
+      ]
+    },
+    {
+      "tag": "move_left",
+      "patterns": [
+        "Décale-toi à gauche", "Va sur la gauche", "Bouge vers la gauche", "Déplace-toi à gauche", "Reste à gauche",
+        "Move left", "Go to the left", "Step to the left", "Shift to the left", "Stay on the left",
+        "Dirige-toi à gauche", "Prends à gauche", "Glisse vers la gauche", "Tasse-toi à gauche", "Tourne légèrement à gauche",
+        "Shift left", "Move slightly left", "Slide left", "Angle to the left", "Turn a bit to the left",
+        "Ne reste pas au milieu, va à gauche", "Change de position vers la gauche", "Adapte ta trajectoire à gauche", "Évite l’obstacle en allant à gauche", "Recule vers la gauche",
+        "Take the left lane", "Move towards the left side", "Stick to the left", "Get on the left", "Align to the left",
+        "Va sur le côté gauche", "Serre à gauche", "Passe sur la gauche", "Va plus à gauche", "Avance vers la gauche"
+      ],
+      "responses": [
+        "Je me décale à gauche!", "Je vais à gauche!",
+        "Moving left!", "Shifting to the left!"
+      ]
+    },
+    {
+      "tag": "turn_on_lights",
+      "patterns": [
+        "Allume tes feux", "Allume la lumière", "Active les phares", "Allume les lumières", "Allume tes phares",
+        "Turn on your lights", "Switch on the headlights", "Activate the lights", "Turn on the lamps", "Illuminate",
+        "Mets les lumières", "Allume la veilleuse", "Active l'éclairage", "Éclaire la route", "Illumine le chemin",
+        "Light up", "Enable the lighting", "Power up the lights", "Turn on your beams", "Let there be light",
+        "Rends-toi visible", "Allume l’éclairage de sécurité", "Allume tout ce qui éclaire", "Ne reste pas dans l’ombre", "Montre-toi avec de la lumière",
+        "Shine some light", "Brighten up", "Let’s have some light", "Make it brighter", "Light it up",
+        "Allume immédiatement tes feux", "Allume tout ce qui éclaire", "Ne reste pas dans l’obscurité", "Ajoute plus de lumière", "Brille avec tes lumières"
+      ],
+      "responses": [
+        "D'accord, j'allume mes feux!", "J'allume la lumière!",
+        "Alright, turning on the lights!", "Lights on!"
+      ]
+    }, {
+      "tag": "are_you_following_me",
+      "patterns": [
+        "Tu me suis bien?", "Tu es toujours là?", "Es-tu derrière moi?", "Tu es toujours en mouvement?", "Tu continues de me suivre?",
+        "Are you following me?", "Are you still there?", "Are you behind me?", "Are you still moving?", "Are you keeping up?",
+        "Tu es encore avec moi?", "Tu n'as pas perdu ma trace?", "Tu es toujours sur mes pas?", "Tu ne t'es pas arrêté?", "Tu restes bien derrière moi?",
+        "Are you keeping pace?", "Are you staying close?", "Are you tracking me?", "Are you still in sync?", "Are you following my lead?",
+        "Tu restes proche de moi?", "Tu es toujours à mes côtés?", "Tu gardes ma trajectoire?", "Tu suis toujours mon chemin?", "Tu avances avec moi?",
+        "Are you still moving forward?", "Are you right behind?", "Are you aligned with me?", "Are you maintaining position?", "Are you staying with me?",
+        "Tu avances encore?", "Tu es bien aligné avec moi?", "Tu gardes ta position?", "Tu restes bien avec moi?", "Tu n'as pas dévié?"
+      ],
+      "responses": [
+        "Oui, je te suis!", "Je suis toujours là!", "Oui, je reste derrière toi!",
+        "Yes, I'm following you!", "I'm still here!", "Yes, I'm staying behind you!"
+      ]
+    },
+    {
+      "tag": "battery_level",
+      "patterns": [
+        "Quel est ton niveau de batterie?", "As-tu encore de la batterie?", "Combien de charge il te reste?", "Ton niveau de batterie est à combien?", "Tu as encore assez d'énergie?",
+        "What is your battery level?", "Do you have enough battery?", "How much charge do you have left?", "What’s your current charge?", "Do you still have power?",
+        "Dis-moi ton niveau de batterie", "Peux-tu me donner ton autonomie restante?", "Es-tu encore bien chargé?", "Quel pourcentage de batterie te reste-t-il?", "Combien de temps peux-tu encore fonctionner?",
+        "Tell me your battery level", "Can you give me your remaining battery?", "Are you still well charged?", "What percentage of battery do you have left?", "How much longer can you run?",
+        "Tu es bientôt à court de batterie?", "Peux-tu tenir encore longtemps?", "Ta batterie est-elle presque vide?", "As-tu besoin d'une recharge?", "Es-tu encore bien alimenté?",
+        "Are you running low on battery?", "Can you last much longer?", "Is your battery almost empty?", "Do you need a recharge?", "Are you still powered well?"
+      ],
+      "responses": [
+        "J'ai encore X% de batterie.", "Mon niveau de batterie est à X%.", "Il me reste X% d'autonomie.",
+        "I have X% battery left.", "My battery level is at X%.", "I still have X% power."
+      ]
+    },
+    {
+      "tag": "let_it_pass",
+      "patterns": [
+        "Laisse passer", "Écarte-toi", "Laisse-le passer", "Ne bloque pas", "Libère le passage",
+        "Let it pass", "Move aside", "Let it go through", "Don’t block", "Clear the way",
+        "Éloigne-toi", "Recule un peu", "Fais-lui de la place", "Dégage le passage", "Ne gêne pas la route",
+        "Step back", "Make space", "Give way", "Make room", "Don’t obstruct",
+        "Ne te mets pas en travers", "Fais un pas de côté", "Ouvre le chemin", "Facilite son passage", "Dégage-toi",
+        "Do not stand in the way", "Take a step aside", "Open the way", "Make its passage easier", "Move away",
+        "Fais attention à ne pas gêner", "Dégage le passage immédiatement", "Ne bloque pas son passage", "Recule si nécessaire", "Mets-toi de côté",
+        "Be careful not to block", "Clear the way immediately", "Don't obstruct its path", "Step back if needed", "Stand aside"
+      ],
+      "responses": [
+        "D'accord, je laisse passer!", "Je me mets sur le côté!",
+        "Alright, I'll let it pass!", "I'll step aside!"
+      ]
+    },
+    {
+      "tag": "turn_off",
+      "patterns": [
+        "Éteins-toi", "Arrête-toi complètement", "Désactive-toi", "Coupe-toi", "Ferme-toi",
+        "Turn off", "Shut down", "Power down", "Deactivate", "Stop completely",
+        "Éteins tout", "Stoppe immédiatement", "Passe en mode veille", "Ne fonctionne plus", "Arrête tout",
+        "Turn everything off", "Stop immediately", "Enter standby mode", "Stop working", "Cease all operations",
+        "Extinction immédiate", "Éteins maintenant", "Arrête-toi là", "Désactive tout", "Éteins-toi proprement",
+        "Immediate shutdown", "Turn off now", "Stop right there", "Deactivate everything", "Shutdown properly",
+        "Coupe l'alimentation", "Éteins complètement", "Arrête tous tes systèmes", "Arrête ton fonctionnement", "Ne reste pas allumé",
+        "Cut the power", "Turn off completely", "Shut down all systems", "Stop your operation", "Do not stay on",
+        "Passe hors tension", "Désactive-toi complètement", "Coupe immédiatement", "Passe en mode arrêt", "Mets-toi hors service",
+        "Go offline", "Fully deactivate", "Cut off immediately", "Enter shutdown mode", "Go out of service"
+      ],
+      "responses": [
+        "Je m'éteins maintenant!", "D'accord, extinction en cours!",
+        "Shutting down now!", "Alright, powering off!"
+      ]
+    }
+  ]
 }

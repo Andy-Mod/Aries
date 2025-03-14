@@ -1,0 +1,128 @@
+{
+  "intents": [
+    {
+      "tag": "unknown",
+      "patterns": [
+        "Je ne comprends pas", "Peux-tu répéter?", "Explique-moi", "Ce n'est pas clair", "Je suis perdu",
+        "Je ne saisis pas", "Pouvez-vous expliquer?", "Je n'ai pas compris", "Qu'est-ce que c'était?", "Pardon, quoi?",
+        "Pouvez-vous le redire?", "Je l'ai manqué", "Qu'avez-vous dit?", "Désolé, j'ai manqué ça", "Peux-tu le redire?",
+        "Je ne comprends pas ça", "Que voulez-vous dire par là?", "Pouvez-vous clarifier?", "Je suis confus", "Ça n'a pas de sens",
+        "Veuillez expliquer", "Je n'ai pas compris ça", "Que voulez-vous dire exactement?", "Pouvez-vous élaborer?", "Je ne suis pas"
+      ],
+      "responses": [
+        "Je ne suis pas sûr de comprendre.", "Pouvez-vous reformuler?", "Désolé, je ne comprends pas."
+      ]
+    },
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Bonjour", "Salut", "Il y a quelqu'un?", "Yo!", 
+        "Salut! Comment ça va?", "Bonjour! Comment ça se passe?", "Salut! Comment va la vie?", "Bonjour! Comment se passe ta journée?", "Salut! Comment ça roule?",
+        "Salut! Ça fait longtemps!", "Bonjour! Ça fait un bail!", "Salut! Content de te revoir!", "Bonjour! Comment ça va?", "Salut! Comment ça se passe?",
+        "Salut! Quoi de neuf?", "Bonjour! Qu'est-ce qui se passe?", "Salut! Qu'est-ce qui se passe?", "Bonjour! Quoi de neuf?", "Salut! Quoi de neuf?"
+      ],
+      "responses": [
+        "Salut! Comment allez-vous?", "Yo! Tranquille?", "Bonjour! Ça roule?"
+      ]
+    },
+    {
+      "tag": "follow_me",
+      "patterns": [
+        "Suis-moi", "Viens avec moi", "Reste derrière moi", "Accompagne-moi", "Marche avec moi", "Reste près de moi", "Suis mon exemple", "Reste à mes côtés", "Ne me perds pas",
+        "Suis-moi de près", "Accompagne-moi", "Allons-y ensemble", "Continue de me suivre", "Bouge après moi", "Viens avec moi", "Reste avec moi", "Suis mon chemin", "Marche à côté de moi",
+        "Suis mes pas", "Reste près de moi", "Marche avec moi", "Suis ma direction", "Reste près de moi", "Suis mon chemin", "Reste à mes côtés", "Marche avec moi", "Suis ma route", "Reste près de moi"
+      ],
+      "responses": [
+        "D'accord, je vous suis!", "Je vous suis immédiatement!"
+      ]
+    },
+    {
+      "tag": "stop",
+      "patterns": [
+        "Arrête-toi", "Halte", "Ne bouge plus", "Stop tout de suite", "Attends!", "Pause", "Stand still", "Pas plus loin", "Cesse de bouger", "Arrête de bouger", "Ne continue pas",
+        "Arrête immédiatement", "Ne bouge pas", "Reste là", "Arrête immédiatement", "Ne continue pas", "Désolé, j'ai manqué ça", "Peux-tu le redire?", "Je ne comprends pas ça"
+      ],
+      "responses": [
+        "Je m'arrête immédiatement!", "D'accord, je stoppe ici!"
+      ]
+    },
+    {
+      "tag": "slow_down",
+      "patterns": [
+        "Ralentis", "Va moins vite", "Diminue ta vitesse", "Réduis ta vitesse", "Ne va pas si vite", "Prends ton temps", "Va plus doucement", "Marche plus lentement", "Diminue l’allure", "Ralenti un peu",
+        "Va plus tranquille", "Modère ta vitesse", "Ne sois pas si rapide", "Doucement!", "Vas-y doucement", "Ralentis un peu", "Ne précipite pas", "Prends une allure plus lente", "Allons-y tranquillement"
+      ],
+      "responses": [
+        "D'accord, je ralentis!", "Je vais plus doucement!"
+      ]
+    },
+    {
+      "tag": "move_right",
+      "patterns": [
+        "Décale-toi à droite", "Va sur la droite", "Bouge vers la droite", "Déplace-toi à droite", "Reste à droite", "Dirige-toi à droite", "Prends à droite", "Glisse vers la droite", "Tasse-toi à droite", "Tourne légèrement à droite",
+        "Ne reste pas au milieu, va à droite", "Change de position vers la droite", "Adapte ta trajectoire à droite", "Évite l’obstacle en allant à droite", "Recule vers la droite", "Va sur le côté droit", "Serre à droite", "Passe sur la droite", "Va plus à droite", "Avance vers la droite"
+      ],
+      "responses": [
+        "Je me décale à droite!", "Je vais à droite!"
+      ]
+    },
+    {
+      "tag": "move_left",
+      "patterns": [
+        "Décale-toi à gauche", "Va sur la gauche", "Bouge vers la gauche", "Déplace-toi à gauche", "Reste à gauche", "Dirige-toi à gauche", "Prends à gauche", "Glisse vers la gauche", "Tasse-toi à gauche", "Tourne légèrement à gauche",
+        "Ne reste pas au milieu, va à gauche", "Change de position vers la gauche", "Adapte ta trajectoire à gauche", "Évite l’obstacle en allant à gauche", "Recule vers la gauche", "Va sur le côté gauche", "Serre à gauche", "Passe sur la gauche", "Va plus à gauche", "Avance vers la gauche"
+      ],
+      "responses": [
+        "Je me décale à gauche!", "Je vais à gauche!"
+      ]
+    },
+    {
+      "tag": "turn_on_lights",
+      "patterns": [
+        "Allume tes feux", "Allume la lumière", "Active les phares", "Allume les lumières", "Allume tes phares", "Mets les lumières", "Allume la veilleuse", "Active l'éclairage", "Éclaire la route", "Illumine le chemin",
+        "Rends-toi visible", "Allume l’éclairage de sécurité", "Allume tout ce qui éclaire", "Ne reste pas dans l’ombre", "Montre-toi avec de la lumière", "Allume immédiatement tes feux", "Allume tout ce qui éclaire", "Ne reste pas dans l’obscurité", "Ajoute plus de lumière", "Brille avec tes lumières"
+      ],
+      "responses": [
+        "D'accord, j'allume mes feux!", "J'allume la lumière!"
+      ]
+    },
+    {
+      "tag": "are_you_following_me",
+      "patterns": [
+        "Tu me suis bien?", "Tu es toujours là?", "Es-tu derrière moi?", "Tu es toujours en mouvement?", "Tu continues de me suivre?", "Tu es encore avec moi?", "Tu n'as pas perdu ma trace?", "Tu es toujours sur mes pas?", "Tu ne t'es pas arrêté?", "Tu restes bien derrière moi?",
+        "Tu restes proche de moi?", "Tu es toujours à mes côtés?", "Tu gardes ma trajectoire?", "Tu suis toujours mon chemin?", "Tu avances avec moi?", "Tu avances encore?", "Tu es bien aligné avec moi?", "Tu gardes ta position?", "Tu restes bien avec moi?", "Tu n'as pas dévié?"
+      ],
+      "responses": [
+        "Oui, je te suis!", "Je suis toujours là!", "Oui, je reste derrière toi!"
+      ]
+    },
+    {
+      "tag": "battery_level",
+      "patterns": [
+        "Quel est ton niveau de batterie?", "As-tu encore de la batterie?", "Combien de charge il te reste?", "Ton niveau de batterie est à combien?", "Tu as encore assez d'énergie?", "Dis-moi ton niveau de batterie", "Peux-tu me donner ton autonomie restante?", "Es-tu encore bien chargé?", "Quel pourcentage de batterie te reste-t-il?", "Combien de temps peux-tu encore fonctionner?",
+        "Tu es bientôt à court de batterie?", "Peux-tu tenir encore longtemps?", "Ta batterie est-elle presque vide?", "As-tu besoin d'une recharge?", "Es-tu encore bien alimenté?"
+      ],
+      "responses": [
+        "J'ai encore X% de batterie.", "Mon niveau de batterie est à X%.", "Il me reste X% d'autonomie."
+      ]
+    },
+    {
+      "tag": "let_it_pass",
+      "patterns": [
+        "Laisse passer", "Écarte-toi", "Laisse-le passer", "Ne bloque pas", "Libère le passage", "Éloigne-toi", "Recule un peu", "Fais-lui de la place", "Dégage le passage", "Ne gêne pas la route", "Fais un pas de côté", "Ouvre le chemin", "Facilite son passage", "Dégage-toi", "Recule si nécessaire", "Mets-toi de côté"
+      ],
+      "responses": [
+        "D'accord, je laisse passer!", "Je me mets sur le côté!"
+      ]
+    },
+    {
+      "tag": "turn_off",
+      "patterns": [
+        "Éteins-toi", "Arrête-toi complètement", "Désactive-toi", "Coupe-toi", "Ferme-toi", "Éteins tout", "Stoppe immédiatement", "Passe en mode veille", "Ne fonctionne plus", "Arrête tout", "Éteins immédiatement", "Arrête-toi là", "Désactive tout", "Éteins-toi proprement", "Coupe l'alimentation", "Éteins complètement", "Arrête tous tes systèmes", "Arrête ton fonctionnement", "Ne reste pas allumé", "Passe hors tension", "Désactive-toi complètement", "Coupe immédiatement", "Passe en mode arrêt", "Mets-toi hors service"
+      ],
+      "responses": [
+        "Je m'éteins maintenant!", "D'accord, extinction en cours!"
+      ]
+    }
+  ]
+}
